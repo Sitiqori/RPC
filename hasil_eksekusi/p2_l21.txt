@@ -1,0 +1,11 @@
+Mengirim aliran nilai ke server:
+  kirim -> 2023002 | Jaringan           | 88
+  kirim -> 2023002 | Komputasi Paralel  | 90
+  kirim -> 2023003 | Basis Data         | 75
+  kirim -> 2023003 | Jaringan           | 140
+  kirim -> 2023003 | Sistem Operasi     | 82
+Balasan server: sukses=False | jumlah=4 | pesan='4 nilai tersimpan, 1 ditolak (di luar 0-100)'
+Verifikasi via StreamNilai('2023002'):
+  Basis Data: 92.0
+  Jaringan: 88.0
+  Komputasi Paralel: 90.0

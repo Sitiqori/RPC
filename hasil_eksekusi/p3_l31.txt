@@ -1,0 +1,38 @@
+Saldo awal : {'B': 500.0, 'A': 1000.0}
+Transfer ke-01: A -> B 10
+Transfer ke-02: A -> B 10
+    Percobaan 1 gagal (DEADLINE_EXCEEDED), ulang dalam 0.5 s
+Transfer ke-03: A -> B 10
+    Percobaan 1 gagal (DEADLINE_EXCEEDED), ulang dalam 0.5 s
+Transfer ke-04: A -> B 10
+    Percobaan 1 gagal (DEADLINE_EXCEEDED), ulang dalam 0.5 s
+Transfer ke-05: A -> B 10
+Transfer ke-06: A -> B 10
+Transfer ke-07: A -> B 10
+Transfer ke-08: A -> B 10
+    Percobaan 1 gagal (DEADLINE_EXCEEDED), ulang dalam 0.5 s
+Transfer ke-09: A -> B 10
+Transfer ke-10: A -> B 10
+    Percobaan 1 gagal (DEADLINE_EXCEEDED), ulang dalam 0.5 s
+Transfer ke-11: A -> B 10
+    Percobaan 1 gagal (DEADLINE_EXCEEDED), ulang dalam 0.5 s
+Transfer ke-12: A -> B 10
+Transfer ke-13: A -> B 10
+    Percobaan 1 gagal (DEADLINE_EXCEEDED), ulang dalam 0.5 s
+Transfer ke-14: A -> B 10
+    Percobaan 1 gagal (DEADLINE_EXCEEDED), ulang dalam 0.5 s
+Transfer ke-15: A -> B 10
+Transfer ke-16: A -> B 10
+Transfer ke-17: A -> B 10
+    Percobaan 1 gagal (DEADLINE_EXCEEDED), ulang dalam 0.5 s
+Transfer ke-18: A -> B 10
+Transfer ke-19: A -> B 10
+Transfer ke-20: A -> B 10
+    Percobaan 1 gagal (DEADLINE_EXCEEDED), ulang dalam 0.5 s
+
+Jumlah retry terjadi : 10
+Transfer menyerah    : 0
+Saldo akhir          : {'B': 700.0, 'A': 800.0}
+Total saldo          : 1500.0 (harus 1500)
+A berkurang          : 200.0 (harus 200)
+B bertambah          : 200.0

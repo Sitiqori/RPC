@@ -1,0 +1,6 @@
+[Andi menerima] SISTEM: Sari bergabung
+[Sari menerima] Andi: Halo semua, ada yang sudah mengerjakan L2.2?
+[Andi menerima] Sari: Halo Andi! Sudah, pakai bidirectional streaming.
+[Sari menerima] Andi: Oke, nanti kita bandingkan hasilnya ya.
+[Andi menerima] Sari: Siap, sampai ketemu di praktikum.
+[Sari menerima] SISTEM: Andi keluar

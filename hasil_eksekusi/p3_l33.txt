@@ -1,0 +1,35 @@
+### (a) Tanpa lock, tanpa jeda buatan - percobaan 1
+Saldo awal : {'A': 1000.0, 'B': 500.0}
+Transfer sukses : 50 dari 50
+Saldo akhir     : {'A': 500.0, 'B': 1000.0}
+Total saldo     : 1500.0 (seharusnya 1500)
+Harapan         : A=500.0, B=1000.0
+Status          : KONSISTEN
+### (a) Tanpa lock, tanpa jeda buatan - percobaan 2
+Saldo awal : {'B': 500.0, 'A': 1000.0}
+Transfer sukses : 50 dari 50
+Saldo akhir     : {'B': 1000.0, 'A': 500.0}
+Total saldo     : 1500.0 (seharusnya 1500)
+Harapan         : A=500.0, B=1000.0
+Status          : KONSISTEN
+### (a) Tanpa lock, tanpa jeda buatan - percobaan 3
+Saldo awal : {'A': 1000.0, 'B': 500.0}
+Transfer sukses : 50 dari 50
+Saldo akhir     : {'A': 500.0, 'B': 1000.0}
+Total saldo     : 1500.0 (seharusnya 1500)
+Harapan         : A=500.0, B=1000.0
+Status          : KONSISTEN
+### (b) Tanpa lock, jeda baca-tulis 5 ms
+Saldo awal : {'A': 1000.0, 'B': 500.0}
+Transfer sukses : 50 dari 50
+Saldo akhir     : {'A': 940.0, 'B': 1000.0}
+Total saldo     : 1940.0 (seharusnya 1500)
+Harapan         : A=500.0, B=1000.0
+Status          : DATA RUSAK (race condition)
+### (c) Dengan lock, jeda baca-tulis 5 ms
+Saldo awal : {'B': 500.0, 'A': 1000.0}
+Transfer sukses : 50 dari 50
+Saldo akhir     : {'B': 1000.0, 'A': 500.0}
+Total saldo     : 1500.0 (seharusnya 1500)
+Harapan         : A=500.0, B=1000.0
+Status          : KONSISTEN

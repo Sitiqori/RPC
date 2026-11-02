@@ -1,0 +1,15 @@
+Hasil 10 permintaan asinkron:
+   1. 2023001 Andi  IPK=3.26 prodi=Informatika
+   2. 2023002 Sari  IPK=3.68 prodi=Informatika
+   3. 2023001 Andi  IPK=3.26 prodi=Informatika
+   4. 2023002 Sari  IPK=3.68 prodi=Informatika
+   5. 2023001 Andi  IPK=3.26 prodi=Informatika
+   6. 2023002 Sari  IPK=3.68 prodi=Informatika
+   7. 2023001 Andi  IPK=3.26 prodi=Informatika
+   8. 2023002 Sari  IPK=3.68 prodi=Informatika
+   9. 2023001 Andi  IPK=3.26 prodi=Informatika
+  10. 2023002 Sari  IPK=3.68 prodi=Informatika
+
+Waktu 10 panggilan SINKRON  : 2.017 s
+Waktu 10 panggilan ASINKRON : 0.205 s (pengiriman semua permintaan hanya 2.1 ms)
+Percepatan                  : 9.9x

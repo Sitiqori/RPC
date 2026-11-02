@@ -1,0 +1,8 @@
+Pesan                               Protobuf (B)   XML-RPC (B)  Rasio XML/PB
+Request GetMahasiswa(nim)                      9           163         18.1x
+Response Mahasiswa(nim,nama,ipk)              24           350         14.6x
+
+Isi Protobuf response (hex): 0a 07 32 30 32 33 30 30 31 12 04 41 6e 64 69 19 14 ae 47 e1 7a 14 0a 40
+len(mhs.SerializeToString()) = 24
+XML-RPC tambah(5,3) dari Praktikum 1 = 190 byte
+Catatan: gRPC menambah 5 byte prefix (1 byte flag + 4 byte panjang) per pesan pada HTTP/2 frame.

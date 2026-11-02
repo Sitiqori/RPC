@@ -1,0 +1,26 @@
+=== methodCall ===
+<?xml version='1.0'?>
+<methodCall>
+<methodName>tambah</methodName>
+<params>
+<param>
+<value><int>5</int></value>
+</param>
+<param>
+<value><int>3</int></value>
+</param>
+</params>
+</methodCall>
+
+=== methodResponse ===
+<?xml version='1.0'?>
+<methodResponse>
+<params>
+<param>
+<value><int>8</int></value>
+</param>
+</params>
+</methodResponse>
+
+methodCall     : 190 byte | data sebenarnya 8 byte (4.2%) | overhead 182 byte (95.8%)
+methodResponse : 121 byte | data sebenarnya 1 byte (0.8%) | overhead 120 byte (99.2%)

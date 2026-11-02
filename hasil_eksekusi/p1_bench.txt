@@ -1,0 +1,15 @@
+--- run 1
+Host server          : localhost
+100 panggilan lokal   : 0.0071 ms  (0.07 us/panggilan)
+100 panggilan RPC     : 33.79 ms  (0.338 ms/panggilan)
+RPC lebih lambat sekitar 4,789x dibanding panggilan lokal
+--- run 2
+Host server          : localhost
+100 panggilan lokal   : 0.0068 ms  (0.07 us/panggilan)
+100 panggilan RPC     : 34.05 ms  (0.341 ms/panggilan)
+RPC lebih lambat sekitar 4,986x dibanding panggilan lokal
+--- run 3
+Host server          : localhost
+100 panggilan lokal   : 0.0064 ms  (0.06 us/panggilan)
+100 panggilan RPC     : 30.92 ms  (0.309 ms/panggilan)
+RPC lebih lambat sekitar 4,843x dibanding panggilan lokal

@@ -1,0 +1,4 @@
+Field pada message Mahasiswa menurut stub LAMA: ['nim', 'nama', 'ipk']
+Client lama menerima: nim=2023001 nama=Andi ipk=3.26
+hasattr(mhs, 'prodi') -> False
+Byte mentah yang diterima & di-parse (unknown field tetap disimpan): 37 byte

@@ -1,0 +1,75 @@
+=== L1.1 pangkat() dan akar() ===
+pangkat(2, 10) = 1024
+pangkat(5, 3)  = 125
+akar(144)      = 12.0
+akar(2)        = 1.4142135623730951
+akar(-4)       -> Fault: <class 'ValueError'>:Akar dari bilangan negatif tidak didefinisikan
+
+=== L1.2 statistik(daftar) ===
+input : [4, 8, 15, 16, 23, 42]
+output: {'min': 4, 'max': 42, 'rata2': 18.0} | tipe di client: dict
+
+XML request (list):
+<?xml version='1.0'?>
+<methodCall>
+<methodName>statistik</methodName>
+<params>
+<param>
+<value><array><data>
+<value><int>4</int></value>
+<value><int>8</int></value>
+<value><int>15</int></value>
+<value><int>16</int></value>
+<value><int>23</int></value>
+<value><int>42</int></value>
+</data></array></value>
+</param>
+</params>
+</methodCall>
+
+XML response (dict):
+<?xml version='1.0'?>
+<methodResponse>
+<params>
+<param>
+<value><struct>
+<member>
+<name>min</name>
+<value><int>4</int></value>
+</member>
+<member>
+<name>max</name>
+<value><int>42</int></value>
+</member>
+<member>
+<name>rata2</name>
+<value><double>18.0</double></value>
+</member>
+</struct></value>
+</param>
+</params>
+</methodResponse>
+
+=== L1.3a datetime ===
+kirim   : 2026-10-31 14:30:00
+tipe di server: DateTime
+diterima: 20261031T14:30:00 | tipe: DateTime
+XML datetime:
+<?xml version='1.0'?>
+<methodCall>
+<methodName>echo</methodName>
+<params>
+<param>
+<value><dateTime.iso8601>20261031T14:30:00</dateTime.iso8601></value>
+</param>
+</params>
+</methodCall>
+
+=== L1.3b bilangan sangat besar ===
+echo(2147483647) -> 2147483647
+echo(2147483648) -> OverflowError: int exceeds XML-RPC limits
+echo(1099511627776) -> OverflowError: int exceeds XML-RPC limits
+-- solusi: kirim sebagai string / float --
+echo(str(2**40))   -> 1099511627776
+int(...) di client -> 1099511627776
+echo(float(2**40)) -> 1099511627776.0

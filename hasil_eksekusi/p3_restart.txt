@@ -1,0 +1,10 @@
+=== Mode dedup: MEMORI (saldo selalu disimpan di SQLite) ===
+1) Transfer pertama  rid=REQ-001 -> Transfer berhasil | saldo: {'A': 900.0, 'B': 600.0}
+2) Server crash / restart (balasan dianggap hilang)
+3) Client retry rid yang SAMA   -> Transfer berhasil | saldo: {'A': 800.0, 'B': 700.0}
+   A berkurang 200.0 (seharusnya 100) => TRANSFER GANDA
+=== Mode dedup: DB (saldo selalu disimpan di SQLite) ===
+1) Transfer pertama  rid=REQ-001 -> Transfer berhasil | saldo: {'B': 600.0, 'A': 900.0}
+2) Server crash / restart (balasan dianggap hilang)
+3) Client retry rid yang SAMA   -> Transfer berhasil | saldo: {'B': 600.0, 'A': 900.0}
+   A berkurang 100.0 (seharusnya 100) => AMAN, at-most-once terjaga
